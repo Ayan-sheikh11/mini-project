@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Registration</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+    </head>
+
+    <body class="min-h-screen bg-gray-100 flex items-center justify-center px-4 py-8" style="background-color: rgb(187, 190, 193);">
+        <div class="w-full max-w-2xl px-4 sm:px-6">
+
+            <div class="bg-white rounded-[2rem] p-6 sm:p-8" style="box-shadow: 0 0 30px 5px rgba(0, 0, 0, 0.4);">
+                <h1 class="text-center text-4xl sm:text-5xl font-bold underline mb-8 sm:mb-10 text-gray-500">Seller account</h1>
+                <form action="submit" onsubmit="StudentRegisteration(event)">
+                    <div class="flex flex-col gap-4">
+                        <input type="text" name="name" placeholder="Name" class="border border-gray-300 rounded px-4 py-2 shadow-md focus:outline-none focus:ring-0" required>
+                        <input type="email" name="email" placeholder="Email" class="border border-gray-300 rounded px-4 py-2 shadow-md focus:outline-none focus:ring-0" required>
+                        <select name="course" class="border border-gray-300 rounded px-4 py-2 text-gray-400 invalid:text-gray-400 valid:text-black shadow-md focus:outline-none focus:ring-0" required>
+                            <option value disabled selected hidden>Select account type</option>
+                            <option value="web Development" class="text-black">Seller account</option>
+                            <option value="mobile Development" class="text-black">Buyer account</option>
+                        </select>
+                        <div class="relative flex items-center">
+                            <input type="password" id="password" name="password" placeholder="Password" class="border border-gray-300 rounded px-4 py-2 pr-10 w-full shadow-md focus:outline-none focus:ring-0" required>
+                            <button type="button" onclick="toggleField('password', 'eyeIcon1')" class="absolute right-3 text-gray-500 focus:outline-none">
+                                <svg id="eyeIcon1" xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+
+                        <div class="relative flex items-center">
+                            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" class="border border-gray-300 rounded px-4 py-2 pr-10 w-full shadow-md focus:outline-none focus:ring-0" required>
+                            <button type="button" onclick="toggleField('confirmPassword', 'eyeIcon2')" class="absolute right-3 text-gray-500 focus:outline-none">
+                                <svg id="eyeIcon2" xmlns="http://w3.org" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.036 12.322a1.012 1.012 0 0 1 0-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178Z" />
+                                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 12a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z" />
+                                </svg>
+                            </button>
+                        </div>
+                        <button type="submit" class="bg-blue-500 text-white px-6 py-3 rounded w-full sm:w-auto">Submit</button>
+                    </div>
+                </form>
+
+                <div class="text-center mt-10">Have an account? <a href="/login.html" class="text-blue-500 underline">Login</a></div>
+            </div>
+        </div>
+
+        <script src="./index.js"></script>
+    </body>
+
+</html>
