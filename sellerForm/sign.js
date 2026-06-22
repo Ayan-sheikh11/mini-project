@@ -1,0 +1,2 @@
+// Sign page script placeholder
+

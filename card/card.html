@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Card</title>
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        
+
+        nav{
+            position:sticky;
+            top:30px;
+            background:var(--bg);
+            box-shadow:var(--shadow);
+            border-radius:50px 50px 50px 50px;
+            margin:20px;
+            z-index:100;
+            background-color:white;
+            align-items:center;
+            box-shadow:var(--shadow-color);
+            display:flex;
+            border:1px solid black;
+            justify-content:space-between;
+            padding:03px 10px;
+            align-items:center;
+        }
+        
+        .logo-con{
+            display:flex;
+            align-items:center;
+            
+        }
+        .logo-con img{
+            
+            opacity: 1.8;
+            border-radius:50%;
+            width:80px;
+        }
+            .nav-links{
+                display:flex;
+               justify-content:space-around;
+                gap:40px;
+                padding:0px 30px;
+            }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo-con">
+            <img src="../img/logo.png" alt="Logo">
+            <h2 >cloth Hub</h2>
+        </div>
+        <div class="nav-links">
+            <a href="../1stpage/index.html" class="nav-link">Home</a>
+            <a href="../about.html" class="nav-link">About</a>
+            <a href="../contact.html" class="nav-link">Contact</a>
+        </div>
+    </nav>
+    <div id="card-container" class="cards-grid">
+        <!-- Cards will be dynamically inserted here -->
+        
+    </div>
+    <script src="card.js"></script>
+</body>
+</html>

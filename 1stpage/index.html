@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="text-gray-800 h-min-screen ">
+
+    <!-- LOGO -->
+    <div class="text-center flex gap-4 items-center  m-5">
+        <div>
+            <img src="../img/logo.png" alt="logo" class="w-16">
+        </div>
+        <h1 class="text-3xl font-bold">Cloth Hub</h1>
+    </div>
+
+    <div class="ml-20 mt-15  ">
+        <h1 class="text-4xl font-bold ">Welcome to <br><span class="text-purple-600">Cloth Hub</span></h1>
+        <p class="text-md text-gray-600 mt-4">buy and sell clothes easily.
+            <br> choose your role to get started.
+        </p>
+    </div>
+
+    <div class="flex justify-center mt-10 gap-60 pr-4">
+
+        <div class="flex gap-10 mt-13 ml-20">
+            <img src="../img/lrkekiimg.jpg" alt class="w-[200px] h-[400px]">
+            <div class="mt-10">
+                <p class="text-3xl font-bold mt-10">
+                    I am a <br><span class="text-6xl font-bold ">Buyer</span>
+                    <br><br>
+                </p>
+                <p>Explore and buy clothes <br> amazing clothes</p>
+                <button onclick="buyer()" href="./signup.html" class="group bg-purple-600 text-white px-5 py-2 rounded-lg mt-10
+                        transition-all duration-500
+                        hover:bg-purple-700
+                        hover:-translate-y-2
+                        hover:shadow-lg hover:shadow-purple-500/30
+                        cursor-pointer flex items-center gap-2">
+                    Join as Buyer
+                    <i
+                        class="fa-solid fa-arrow-right-to-bracket ml-2 transition-transform duration-300 group-hover:translate-x-1">
+                    </i>
+                </button>
+            </div>
+        </div>
+        <div class="flex gap-11 mt-13 ">
+            <div class="mt-10">
+                <p class="text-3xl font-bold mt-10">
+                    I am a <br><span class="text-6xl font-bold ">Seller</span>
+                    <br><br>
+                </p>
+                <p>Sell my clothes <br> and earn money</p>
+                <button id="buyer" class="group bg-purple-600 text-white px-5 py-2 rounded-lg mt-10
+  transition-all duration-500
+  hover:bg-purple-700
+  hover:-translate-y-2
+        hover:shadow-lg hover:shadow-purple-500/30
+       cursor-pointer flex items-center gap-2">
+                    Join as Seller
+                    <i
+                        class="fa-solid fa-arrow-right-to-bracket ml-2 transition-transform duration-300 group-hover:translate-x-1"></i>
+                </button>
+            </div>
+            <img src="../img/lrkikiimg.jpg" alt class="w-[300px] h-[400px]">
+
+        </div>
+
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+
+</html>
